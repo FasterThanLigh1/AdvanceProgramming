@@ -1,7 +1,9 @@
 import { collection, getDocs, query, where } from 'firebase/firestore';
-import { FormEventHandler, useState } from 'react';
+import { FormEventHandler, useState, useEffect } from 'react';
 import Stack from 'react-bootstrap/Stack';
 import { Table, Button, Modal, Dropdown, Menu, Space } from 'antd';
+import axios from 'axios';
+import useFetch from 'react-fetch-hook';
 
 const menu = (
   <Menu
@@ -43,7 +45,8 @@ const menu = (
 
 function Exchange() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
+  const { isLoading, error, data } = useFetch("//url");
+  console.log(data);
   const showModal = () => {
     setIsModalOpen(true);
   };

@@ -20,6 +20,12 @@ const Header = () => {
 					<Link className="nav-link" to={'/exchange-page'}>
 						Home
 					</Link>
+					<Link className="nav-link" to={'/login'}>
+						Login
+					</Link>
+					<Link className="nav-link" to={'/register'}>
+						Register
+					</Link>
 				</Nav>
 				<NavbarBrand>
 					<span className="fs-3 bi bi-journals"> BOOK EXCHANGE </span>
