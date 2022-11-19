@@ -10,6 +10,7 @@ import { getMessaging, getToken } from "firebase/messaging";
 
 import Header from './Header';
 import Login from './Login';
+import Exchange from './ExchangePage';
 import NoteEditor from './NoteEditor';
 import NoteListing from './NoteListing';
 import NoteSearch from './NoteSearch';
@@ -28,6 +29,7 @@ ReactDOM.render(
 					<Route path="/search" element={<NoteSearch />} />
 					<Route path="/login" element={<Login />} />
 					<Route path="/register" element={<Register />} />
+					<Route path="/exchange-page" element={<Exchange />} />
 				</Routes>
 			</Container>
 		</BrowserRouter>

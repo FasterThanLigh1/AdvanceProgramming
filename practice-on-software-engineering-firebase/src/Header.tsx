@@ -17,27 +17,14 @@ const Header = () => {
 		<Navbar bg="light" expand="lg">
 			<Container fluid>
 				<Nav className="me-auto">
-					<Link className="nav-link" to={'/'}>
+					<Link className="nav-link" to={'/exchange-page'}>
 						Home
 					</Link>
 				</Nav>
 				<NavbarBrand>
 					<span className="fs-3 bi bi-journals"> BOOK EXCHANGE </span>
 				</NavbarBrand>
-				<Nav className="ms-auto">
-					{authenticated ? (
-						<Nav.Link onClick={handleLogout}>Logout</Nav.Link>
-					) : (
-						<>
-							<Link className="nav-link" to={'/login'}>
-								Login
-							</Link>
-							<Link className="nav-link" to={'/register'}>
-								Register
-							</Link>
-						</>
-					)}
-				</Nav>
+				
 			</Container>
 		</Navbar>
 	);
