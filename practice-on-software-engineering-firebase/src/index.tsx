@@ -11,6 +11,7 @@ import { getMessaging, getToken } from "firebase/messaging";
 import Header from './Header';
 import Login from './Login';
 import Exchange from './ExchangePage';
+import UserProfile from './UserProfilePage';
 import NoteEditor from './NoteEditor';
 import NoteListing from './NoteListing';
 import NoteSearch from './NoteSearch';
@@ -30,6 +31,7 @@ ReactDOM.render(
 					<Route path="/login" element={<Login />} />
 					<Route path="/register" element={<Register />} />
 					<Route path="/exchange-page" element={<Exchange />} />
+					<Route path="/user-profile" element={<UserProfile />} />
 				</Routes>
 			</Container>
 		</BrowserRouter>

@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavbarBrand from 'react-bootstrap/NavbarBrand';
 import { Link, useNavigate } from 'react-router-dom';
+import NoteEditor from './NoteEditor';
 
 const Header = () => {
 	const authenticated = localStorage.getItem('token') != null;
@@ -25,6 +26,9 @@ const Header = () => {
 					</Link>
 					<Link className="nav-link" to={'/register'}>
 						Register
+					</Link>
+					<Link className="nav-link" to={'/user-profile'}>
+						User
 					</Link>
 				</Nav>
 				<NavbarBrand>

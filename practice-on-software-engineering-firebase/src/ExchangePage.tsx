@@ -45,8 +45,10 @@ const menu = (
 
 function Exchange() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  /*fetch('https://a564-14-169-197-105.ngrok.io/book/63781b032e1766c950f56317/all')
+  .then(response => response.json())
   const { isLoading, error, data } = useFetch("//url");
-  console.log(data);
+  console.log(data);*/
   const showModal = () => {
     setIsModalOpen(true);
   };
@@ -66,7 +68,7 @@ function Exchange() {
 
   const dataSource = [
     {
-      id: '1',
+      bookid: '1',
       bookname: 'Go',
       ownername: 'Johnny Sins',
       request: ' ',
@@ -75,9 +77,9 @@ function Exchange() {
   
   const columns = [
     {
-      title: 'Id',
-      dataIndex: 'id',
-      key: 'id',
+      title: 'Book Id',
+      dataIndex: 'bookid',
+      key: 'bookid',
     },
     {
       title: 'Book Name',
